@@ -1,11 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site com Bordas</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <h1>Projeto do ano letivo</h1>
+  <div class="site-container">
+    <div class="sidebar">
+      <button class="about-btn">Sobre Nós</button>
+      <a href="#form" class="contact-link">Formulário de Contato</a>
+    </div>
+    <div class="main-content">
+      <!-- Conteúdo principal do site vai aqui -->
+      <h1>Projeto do ano letivo!</h1>
+      <p>Bem vindo ao projeto do ano letivo</p>
+    </div>
+  </div>
+  <!-- Seu formulário de contato -->
+  <div id="form" class="contact-form">
+    <h2>Formulário de Contato</h2>
+    <form action="#" method="post">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Mensagem:</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+  <style> 
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .site-container {
+    display: flex;
+    height: 100%;
+  }
+  
+  .sidebar {
+    width: 200px; /* Largura da barra lateral */
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .about-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .about-btn:hover {
+    background-color: #ff7043;
+  }
+  
+  .contact-link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  
+  .contact-link:hover {
+    text-decoration: underline;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .contact-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form h2 {
+    margin-top: 0;
+  }
+  
+
+</style>
 </body>
 </html>
