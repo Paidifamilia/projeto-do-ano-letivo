@@ -1,254 +1,53 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projeto do ano letivo</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">  
+  
 </head>
 <body>
- <div class="site-container">
-    <div class="sidebar">
-      <div class="empty-bar"></div>
-      <div class="nav-items">
-        <button class="about-btn" onclick="window.location.href = 'https://sun-gabby.github.io/projeto-do-ano-letivo/page2.html';">Sobre Nós</button>
-        <a href="#" class="nav-link">Quem Somos</a>
-        <a href="#" class="nav-link">Pesquisa</a>
+    <nav class= "menu lateral">
+      
+      <div class="btn-expandir">
+      <i class="bi bi-house"></i>
       </div>
-    </div>
-    <div class="main-content">
-      <!-- Conteúdo principal do site vai aqui -->
-      <h1>Projeto do ano letivo!</h1>
-      <p>Bem-vindo ao projeto do ano letivo</p>
-    </div>
-  </div>
   
-  <footer class="footer">
-    <img src="logo_arvore_cinza.png" alt="Logo de árvore cinza">
-  </footer>
-  
-  <!-- Seu formulário de contato -->
-  <div id="form" class="contact-form">
-    <h2>Formulário de Contato</h2>
-    <form action="#" method="post">
-      <label for="name">Nome:</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="message">Mensagem:</label>
-      <textarea id="message" name="message" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </div>
-  
-<div class="site-container">
-  <div class="sidebar" id="sidebar">
-    <button class="about-btn" onclick="window.location.href = 'https://sun-gabby.github.io/projeto-do-ano-letivo/page2.html';">Sobre Nós</button>
-    <a href="https://sun-gabby.github.io/projeto-do-ano-letivo/page1.html" class="contact-link">Formulário de Contato</a>
-    <div class="topics">
-      <a href="#">Nosso Projeto</a>
-      <a href="#">Pesquisa</a>
-    </div>
-  </div>
-  <div class="main-content">
-    <!-- Conteúdo principal do site vai aqui -->
-    <h1>Projeto do ano letivo!</h1>
-    <p>Bem-vindo ao projeto do ano letivo</p>
-  </div>
-</div>
-<!-- Seu formulário de contato -->
-<div id="form" class="contact-form">
-  <h2>Formulário de Contato</h2>
-  <form action="#" method="post">
-    <label for="name">Nome:</label>
-    <input type="text" id="name" name="name" required>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    <label for="message">Mensagem:</label>
-    <textarea id="message" name="message" required></textarea>
-    <button type="submit">Enviar</button>
-  </form>
-</div>
+      <ul>
+    <li class="item menu">
+<a href="#">
+    <span class="icon"></span>
+      <span class="txt-link"></span>
+</a>
+    </li>
+            <li class="item menu">
+<a href="#">
+    <span class="icon"></span>
+      <span class="txt-link"></span>
+</a>
+    </li>
+            <li class="item menu">
+<a href="#">
+    <span class="icon"></span>
+      <span class="txt-link"></span>
+</a>
+    </li>
+          <li class="item menu">
+<a href="#">
+    <span class="icon"></span>
+      <span class="txt-link"></span>
+</a>
+    </li>
+            <li class="item menu">
+<a href="#">
+    <span class="icon"></span>
+      <span class="txt-link"></span>
+</a>
+    </li>
+      </ul>
 
-<style>
-
-  body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-  }
-  
-  .site-container {
-    display: flex;
-    height: 100%;
-  }
-  
-  .sidebar {
-    width: 200px; /* Largura da barra lateral */
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    overflow: hidden; /* Para esconder o conteúdo adicional inicialmente */
-    transition: width 0.3s; /* Adicionando transição para a animação */
-  }
-
-  .sidebar:hover {
-    width: 250px; /* Expandir a largura ao passar o mouse */
-  }
-
-  .about-btn {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #ff5722;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  .about-btn:hover {
-    background-color: #ff7043;
-  }
-
-  .contact-link {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    margin-bottom: 10px;
-  }
-
-  .contact-link:hover {
-    text-decoration: underline;
-  }
-
-  .main-content {
-    flex: 1;
-    padding: 20px;
-  }
-
-  .contact-form {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-
-  .contact-form h2 {
-    margin-top: 0;
-  }
-
-  body {
-    transition: background-color 0.3s ease;
-  }
-
-  .topics {
-    margin-top: 20px;
-  }
-
-  .topics a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    margin-bottom: 10px;
-  }
-
-  .topics a:hover {
-    text-decoration: underline;
-  }
-body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-    }
-    
-    .site-container {
-      display: flex;
-      min-height: 100vh;
-      flex-direction: column;
-    }
-    
-    .sidebar {
-      width: 200px; /* Largura da barra lateral */
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-    }
-    
-    .empty-bar {
-      height: 50px; /* Altura da barra vazia */
-      transition: height 0.3s ease;
-    }
-    
-    .nav-items {
-      overflow: hidden;
-    }
-    
-    .nav-link {
-      display: block;
-      color: #fff;
-      text-decoration: none;
-      margin-bottom: 10px;
-    }
-    
-    .nav-link:hover {
-      text-decoration: underline;
-    }
-    
-    .about-btn {
-      display: block;
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      background-color: #ff5722;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    
-    .about-btn:hover {
-      background-color: #ff7043;
-    }
-    
-    .main-content {
-      flex: 1;
-      padding: 20px;
-    }
-    
-    .contact-form {
-      display: none;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      padding: 20px;
-      background-color: #f0f0f0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    
-    .contact-form h2 {
-      margin-top: 0;
-    }
-    
-    .footer {
-      background-color: #f0f0f0;
-      text-align: center;
-      padding: 20px;
-    }
-    
-    .footer img {
-      width: 100px;
-      height: 100px;
-    }
-</style>
-
+      
+    </nav>
 </body>
 </html>
