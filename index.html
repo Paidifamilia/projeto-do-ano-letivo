@@ -6,34 +6,40 @@
   <title>Projeto do ano letivo</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+<body>
 
-  <div class="site-container">
-    <div class="sidebar">
-<button class="about-btn" onclick="window.location.href = 'https://sun-gabby.github.io/projeto-do-ano-letivo/page2.html';">Sobre Nós</button>
-      <a href="https://sun-gabby.github.io/projeto-do-ano-letivo/page1.html" class="contact-link">Formulário de Contato</a>
-    </div>
-    <div class="main-content">
-      <!-- Conteúdo principal do site vai aqui -->
-      <h1>Projeto do ano letivo!</h1>
-      <p>Bem vindo ao projeto do ano letivo</p>
+<div class="site-container">
+  <div class="sidebar" id="sidebar">
+    <button class="about-btn" onclick="window.location.href = 'https://sun-gabby.github.io/projeto-do-ano-letivo/page2.html';">Sobre Nós</button>
+    <a href="https://sun-gabby.github.io/projeto-do-ano-letivo/page1.html" class="contact-link">Formulário de Contato</a>
+    <div class="topics">
+      <a href="#">Nosso Projeto</a>
+      <a href="#">Pesquisa</a>
     </div>
   </div>
-  <!-- Seu formulário de contato -->
-  <div id="form" class="contact-form">
-    <h2>Formulário de Contato</h2>
-    <form action="#" method="post">
-      <label for="name">Nome:</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="message">Mensagem:</label>
-      <textarea id="message" name="message" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
+  <div class="main-content">
+    <!-- Conteúdo principal do site vai aqui -->
+    <h1>Projeto do ano letivo!</h1>
+    <p>Bem-vindo ao projeto do ano letivo</p>
   </div>
-  <style>
+</div>
+<!-- Seu formulário de contato -->
+<div id="form" class="contact-form">
+  <h2>Formulário de Contato</h2>
+  <form action="#" method="post">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="message">Mensagem:</label>
+    <textarea id="message" name="message" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</div>
 
-body, html {
+<style>
+
+  body, html {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -49,8 +55,14 @@ body, html {
     background-color: #333;
     color: #fff;
     padding: 20px;
+    overflow: hidden; /* Para esconder o conteúdo adicional inicialmente */
+    transition: width 0.3s; /* Adicionando transição para a animação */
   }
-  
+
+  .sidebar:hover {
+    width: 250px; /* Expandir a largura ao passar o mouse */
+  }
+
   .about-btn {
     display: block;
     width: 100%;
@@ -62,27 +74,27 @@ body, html {
     border-radius: 5px;
     cursor: pointer;
   }
-  
+
   .about-btn:hover {
     background-color: #ff7043;
   }
-  
+
   .contact-link {
     display: block;
     color: #fff;
     text-decoration: none;
     margin-bottom: 10px;
   }
-  
+
   .contact-link:hover {
     text-decoration: underline;
   }
-  
+
   .main-content {
     flex: 1;
     padding: 20px;
   }
-  
+
   .contact-form {
     display: none;
     position: fixed;
@@ -94,15 +106,31 @@ body, html {
     border: 1px solid #ccc;
     border-radius: 5px;
   }
-  
+
   .contact-form h2 {
     margin-top: 0;
   }
 
-    body {
-  transition: background-color 0.3s ease;
-}
-    
-  </style>
+  body {
+    transition: background-color 0.3s ease;
+  }
+
+  .topics {
+    margin-top: 20px;
+  }
+
+  .topics a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+
+  .topics a:hover {
+    text-decoration: underline;
+  }
+
+</style>
+
 </body>
 </html>
